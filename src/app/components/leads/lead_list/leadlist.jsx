@@ -1,8 +1,12 @@
+import Lead from "../lead/lead"
 
-const LeadList = () => {
+const LeadList = ({leads}) => {
+  
   return (
-    <div>LeadList</div>
-  )
+          leads.map(lead => {
+            return <Lead key={lead.id} lead={lead} />
+          })
+    )
 }
 
 export default LeadList

@@ -1,11 +1,11 @@
-import Link from "next/link"
-import {Inter} from "@next/font/google"
-
-const inter = Inter({ subsets: ['latin'] })
+import Image from "next/image"
+import Navbar from "../navbar/navbar"
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header className="bg-white">
+      <Navbar />
+    </header>
   )
 }
 
